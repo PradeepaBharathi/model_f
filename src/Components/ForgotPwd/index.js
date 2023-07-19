@@ -30,7 +30,10 @@ const ForgotPwd = () => {
               navigate('/sent');
           }  
       } )
-      .catch((err)=> console.log(err))
+      .catch((err)=> 
+      {console.log(err);
+      window.alert(err.response.data.message);
+      })
   }
 
   return (
