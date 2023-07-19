@@ -1,0 +1,27 @@
+// get token from login and set in global context 
+// or set token in local storage 
+
+import { createContext, useState, useContext } from "react";
+
+const NameContext = createContext(); //1
+
+const NameProvider = ({ children }) => {
+  const [currentUser, setCurrentUser] = useState({fname:"", lname:"", email:"", id:""});
+  const [isLogged, setIsLogged] = useState(false) 
+  const serverURL = "https://urlshortener-backend-7x1o.onrender.com";
+
+  return (
+    // second step
+    <NameContext.Provider 
+      value={{ currentUser, setCurrentUser, isLogged, setIsLogged, serverURL }}
+    >
+      {children}
+    </NameContext.Provider>
+  );
+};
+
+ const useGlobalContext = () => {
+    return useContext(NameContext);
+  };
+  
+  export { NameContext, NameProvider, useGlobalContext };
