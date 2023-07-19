@@ -14,6 +14,7 @@ import { NameProvider } from './Context/context';
 import ActivationMail from './Components/ActivationMail/index.js';
 import ResetPwd from './Components/ResetPwd';
 import Redirect from './Components/Redirect';
+import Home from './Components/Home';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
       <NameProvider> 
         <Header/>
         <Routes>
-        <Route path="/" element={ <Login/>} ></Route>
+        <Route path="/" element={ <Home/>} ></Route>
         <Route path="/login" element={ <Login/>} ></Route>
         <Route path="/signup" element={ <Signup/>} ></Route>
         <Route path="/forgot-password" element={ <ForgotPwd/>} ></Route>

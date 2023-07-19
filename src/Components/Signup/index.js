@@ -25,6 +25,7 @@ function Signup() {
   }
   function handleSubmit(e){
       e.preventDefault(); 
+      window.alert("Processing your request")
       const response = addUserDB({fname: fname, lname: lname, email: email, password: pwd})
       response
       .then((res) => {
