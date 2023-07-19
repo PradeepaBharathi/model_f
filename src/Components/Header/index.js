@@ -39,9 +39,7 @@ const Header = () => {
       </form> */}
     </div>
   </div> 
-  { (localStorage.getItem("loggedUsername")) && <div className="mx-3">Welcome </div> }
-  { (!localStorage.getItem("loggedUsername"))  &&  <div className="mx-3">User not logged in</div> }
- 
+  
 </nav>
     )
 }
