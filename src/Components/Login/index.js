@@ -22,7 +22,6 @@ const Login = () => {
         localStorage.removeItem("loggedUser");
         localStorage.removeItem("loggedUsername");
         localStorage.removeItem("loggedUserID");
-        //console.log(localStorage.getItem("tokenAuth"));
         setIsLogged(false);
         setCurrentUser({})
         navigate('/forgot-password');

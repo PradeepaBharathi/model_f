@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useState } from "react";
 import { addUser } from '../../Services/APIservices.js';
 import { useNavigate } from "react-router-dom";
@@ -24,7 +24,13 @@ function Signup() {
       navigate('/login');
   }
   function handleSubmit(e){
-      e.preventDefault(); 
+      e.preventDefault();  
+      localStorage.removeItem("tokenAuth");
+      localStorage.removeItem("loggedUser");
+      localStorage.removeItem("loggedUsername");
+      localStorage.removeItem("loggedUserID");
+      setIsLogged(false);
+      setCurrentUser({})
       window.alert("Processing your request")
       const response = addUserDB({fname: fname, lname: lname, email: email, password: pwd})
       response
@@ -45,15 +51,6 @@ function Signup() {
       })
    
   }
-  
-  useEffect( ()=> {
-        localStorage.removeItem("tokenAuth");
-        localStorage.removeItem("loggedUser");
-        localStorage.removeItem("loggedUsername");
-        localStorage.removeItem("loggedUserID");
-        setIsLogged(false);
-        setCurrentUser({})
-  },[])
 
   return (
     <>
