@@ -18,10 +18,6 @@ const Header = () => {
         <li className="nav-item">
           <NavLink className="nav-link" to="/signup">Sign Up</NavLink>
         </li>
-        
-        {/* <li className="nav-item">
-          <NavLink className="nav-link" to="/forgot-password">Forgot Password</NavLink>
-        </li> */}
         <li className="nav-item">
           <NavLink className="nav-link" to="/dashboard-url">Dashboard</NavLink>
         </li>
@@ -30,13 +26,8 @@ const Header = () => {
         </li>
         <li className="nav-item">
           <NavLink className="nav-link" to="/all-url">All URLs</NavLink>
-        </li>
-        
+        </li> 
       </ul>
-      {/* <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-sm btn-outline-dark fw-bold" type="submit">Search</button>
-      </form> */}
     </div>
   </div> 
   

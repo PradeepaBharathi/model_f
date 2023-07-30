@@ -1,8 +1,7 @@
 .navbar{
-    min-height: 10vh !important ; 
-    background-color: rgb(189, 111, 237);
-    /* background-image: repeating-linear-gradient(45deg, rgb(240, 233, 233) 0px, rgb(236, 120, 120) 10px, rgb(244, 239, 239) 10px, rgb(247, 247, 191) 10px, rgb(100, 100, 21) 20px); */
-    box-shadow: 2px 2px grey;
+    /* min-height: 10vh !important ;  */
+    background-color: #0880cb;
+    box-shadow: 2px 2px rgb(219, 218, 218);
 }
 .navbar-brand{
     margin-left: 5%;
@@ -17,8 +16,10 @@
 .nav-item{
     margin-left: 5%;
     font-weight: bold;
-    font-size: 1rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-size: 0.70;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    min-width: fit-content;
 }
 .nav-item:hover{
     box-shadow: 2px 2px white;

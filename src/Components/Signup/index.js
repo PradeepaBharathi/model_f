@@ -57,9 +57,9 @@ function Signup() {
     <div className="d-flex justify-content-end align-items-end mt-3"> 
        <button className="btn btn-info m-3" onClick={handleClick}>Log in</button>
    </div>
-   <div className="container m-3 ">
+   <div className="container ">
    <div className="d-flex justify-content-center align-items-center flex-lg-row">
-   <div className=" border border-dark rounded bg-white p-5 mt-3 col-lg-6">
+   <div className=" border border-dark rounded bg-light p-5 mt-3 col-lg-6">
        <h5 className="text-decoration-underline mb-3"> Sign up </h5> 
        <form onSubmit={handleSubmit}>
            <div className="my-3">

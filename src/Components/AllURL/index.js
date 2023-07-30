@@ -81,10 +81,10 @@ function AllURL() {
           <LogButton/>
         </div> 
     <h5 className="text-decoration-underline mb-3"> All URLs </h5> 
-      <div className='mx-5'>
+      <div className='d-flex flex-column justify-content-center align-items-center'>
         <h6>List of URLs created by user : {urlList.length}</h6>
       { urlList.length &&
-        <table className="table table-success table-striped table-responsive-md mt-3 "> 
+        <table className="table table-success table-striped table-responsive-md mt-3 w-75 "> 
         <thead>
       <tr>
         <th scope="col">#</th>

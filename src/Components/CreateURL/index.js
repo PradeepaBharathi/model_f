@@ -83,7 +83,7 @@ function CreateURL() {
   return (
     <>
      <LogButton/>
-      <h5 className="text-decoration-underline mb-3"> Create Short URL </h5> 
+      <h5 className="urlheading mb-3"> Short URL </h5> 
       <div className="container-fluid my-3 ">
         <div className="d-flex justify-content-center align-items-center flex-lg-row">
         <div className=" border border-dark rounded col-sm-10 col-md-8 col-lg-8 bg-white p-3 ">
@@ -102,9 +102,9 @@ function CreateURL() {
             </div>-
         </div>
         </div>
-        <div className='p-4'>
+        <div className='d-flex flex-row justify-content-center'>
         { urlData &&
-        <table className="table table-success table-striped table-responsive-sm"> 
+        <table className="table table-success table-striped table-responsive-sm w-75"> 
         <thead>
       <tr>
         <th scope="col">#</th>

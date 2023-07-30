@@ -40,9 +40,9 @@ const ResetPwd = () => {
     }
     return(
         <>
-        <div className="container m-5 ">
+        <div className="container m-4 ">
         <div className="d-flex justify-content-center align-items-center flex-lg-row">
-        <div className=" border border-dark rounded col-lg-5 bg-white p-5 mt-3">
+        <div className=" border border-dark rounded bg-light col-lg-5 bg-white p-5 mt-3">
             <h5 className="text-decoration-underline mb-3">Reset Password </h5> 
             <form onSubmit={handleSubmit}>
                 <div className="my-3">

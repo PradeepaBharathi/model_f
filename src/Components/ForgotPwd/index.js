@@ -44,7 +44,7 @@ const ForgotPwd = () => {
         </div> 
     <div className="container-fluid my-3 ">
     <div className="d-flex justify-content-center align-items-center flex-lg-row">
-    <div className=" border border-dark rounded bg-white p-5 ">
+    <div className=" border border-dark rounded bg-light p-5 ">
         <h5 className=" p-2">Forgot Password ?</h5>
         <form onSubmit={handleSubmit}>
             <div className="form-outline m-4">

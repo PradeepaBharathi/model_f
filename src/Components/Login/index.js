@@ -65,9 +65,9 @@ const Login = () => {
                 <button className="btn btn-info m-3" onClick={handleSignup}>Sign Up</button>
                 
         </div> 
-        <div className="container m-3 ">
-        <div className="d-flex justify-content-center align-items-center flex-lg-row">
-        <div className=" border border-dark rounded col-md-8 col-lg-5 bg-white p-5 mt-3">
+        <div className="container ">
+        <div className=" d-flex justify-content-center align-items-center flex-lg-row">
+        <div className=" border border-dark rounded  col-md-8 col-lg-5 bg-light p-5 mt-3">
             <h5 className="text-decoration-underline mb-3"> Login </h5> 
             <form onSubmit={handleSubmit}>
                 <div className="my-3">
