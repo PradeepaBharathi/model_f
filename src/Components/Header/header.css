@@ -1,5 +1,6 @@
 .navbar{
     /* min-height: 10vh !important ;  */
+    width: 100%;
     background-color: #0880cb;
     box-shadow: 2px 2px rgb(219, 218, 218);
 }

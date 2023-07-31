@@ -10,13 +10,13 @@ function AllURLlayout() {
         navigate('/create-url');
       }
   return (
-    <>
+    <div className="container-fluid">
     <div className="d-flex justify-content-end align-items-end mt-3"> 
     <button className="btn btn-info m-3" onClick={handleCreate}>Create URL</button>
     <LogButton/>
     </div> 
     <AllURL />
-    </>
+    </div>
   )
 }
 

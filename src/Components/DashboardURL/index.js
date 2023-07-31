@@ -3,7 +3,6 @@ import {  getTodayURL, getMonthlyURL, updateURLCount } from '../../Services/APIs
 import { useGlobalContext } from "../../Context/context";
 import LogButton from '../LogButton';
 import { NavLink } from "react-router-dom";
-import CreateURL from '../CreateURL';
 import AllURL from '../AllURL';
 
 function DashboardURL() {
@@ -136,7 +135,7 @@ function DashboardURL() {
           <div className='col-md-8 col-sm-12'>
           <div className='d-flex flex-column justify-content-center align-items-center'>
           <h6>Today : {urlList.length > 0 ? urlList.length : "-"} </h6> 
-          <div className='mx-1 overflow-auto'>
+          <div className='w-75 overflow-auto'>
 
               { urlList.length ?
                 <table className="table table-success table-striped table-responsive-md mt-3 "> 

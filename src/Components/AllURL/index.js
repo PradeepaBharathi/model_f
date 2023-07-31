@@ -2,12 +2,10 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import { getAllURL, updateURLCount } from '../../Services/APIservices';
 import { useGlobalContext } from "../../Context/context";
-import { useNavigate } from "react-router-dom";
 
 function AllURL() {
   const [urlList, setURLlist] = useState([]);
   const {isLogged, currentUser} = useGlobalContext();
-  const navigate = useNavigate();
   
   const getAll = async(data,config) => {
     console.log("get all url fn");
@@ -73,10 +71,12 @@ function AllURL() {
   return (
     <>
       <h4 className=" text-decoration-underline mb-3"> All URLs </h4> 
-      <div className='d-flex flex-column justify-content-center align-items-center'>
+      <div className='d-flex flex-column justify-content-center align-items-center flex-wrap'>
         <h5>Total URLs created by user : {urlList.length}</h5>
+        <div className=' w-75 overflow-auto'>
+
       { urlList.length &&
-        <table className="table table-success table-striped table-responsive-md mt-3 w-75 "> 
+        <table className="table table-success table-striped table-responsive-md mt-3  "> 
         <thead>
       <tr>
         <th scope="col">#</th>
@@ -99,6 +99,7 @@ function AllURL() {
         </tbody>
         </table>
       }     
+      </div> 
       </div> 
     </>
   )

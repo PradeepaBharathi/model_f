@@ -4,7 +4,7 @@ import './header.css'
 const Header = () => {
    
     return (
-        <nav className="navbar navbar-expand-md text-white">
+        <nav className="navbar navbar-expand-md text-white ">
    <div className="container-fluid">
     <NavLink className="navbar-brand border border-dark fw-bold fst-italic p-1" to={"/"} >URL Shortener App</NavLink>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
