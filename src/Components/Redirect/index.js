@@ -7,9 +7,15 @@ function Redirect() {
     const {id} = useParams(); 
     const {serverURL} = useGlobalContext();
     const getData = async(id) => {
-    const response = await axios.get(`${serverURL}/${id}`)
-    //console.log(response);
-    window.location.href = response.data.longURL;
+    try{
+      const response = await axios.get(`${serverURL}/${id}`)
+      //console.log(response);
+      window.location.href = response.data.longURL;
+    }
+    catch(err){
+      window.alert("Invalid URL")
+    }
+   
   }
   useEffect(  ()=> {
     getData(id);

@@ -6,7 +6,6 @@ import Signup from './Components/Signup';
 import ForgotPwd from './Components/ForgotPwd';
 import DashboardURL from './Components/DashboardURL';
 import CreateURL from './Components/CreateURL';
-import AllURL from './Components/AllURL';
 import Header from './Components/Header';
 import Authorize from './Components/Authorize';
 import ActivateAccount from './Components/ActivateAccount';
@@ -15,6 +14,7 @@ import ActivationMail from './Components/ActivationMail/index.js';
 import ResetPwd from './Components/ResetPwd';
 import Redirect from './Components/Redirect';
 import Home from './Components/Home';
+import AllURLlayout from './Components/AllURLlayout';
 
 function App() {
   return (
@@ -33,8 +33,9 @@ function App() {
         <Route path="/authorize" element={ <Authorize/>} ></Route>
         <Route path="/dashboard-url" element={ <DashboardURL/>} ></Route>
         <Route path="/create-url" element={ <CreateURL/>} ></Route>
-        <Route path="/all-url" element={ <AllURL/>} ></Route>
+        <Route path="/all-url" element={ <AllURLlayout/>} ></Route>
         <Route path="/:id" element={ <Redirect/>} ></Route>
+        <Route path= '*' element={ <h2>Invalid page</h2>}></Route>
         </Routes>
       </NameProvider>
     </div>

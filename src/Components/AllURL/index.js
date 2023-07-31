@@ -1,5 +1,4 @@
 import React from 'react'
-import LogButton from '../LogButton'
 import { useEffect, useState } from 'react';
 import { getAllURL, updateURLCount } from '../../Services/APIservices';
 import { useGlobalContext } from "../../Context/context";
@@ -55,10 +54,7 @@ function AllURL() {
     const data = {id:e.target.id} 
     updateURLCountDB(data,config);
   }
-  function handleCreate(e){
-    navigate('/create-url');
-  }
-
+ 
   useEffect(()=> {
     let tokenAuth = localStorage.getItem("tokenAuth");
     const config = { headers : {"x-auth-token" : tokenAuth}}
@@ -76,13 +72,9 @@ function AllURL() {
   },[isLogged,currentUser])
   return (
     <>
-     <div className="d-flex justify-content-end align-items-end mt-3"> 
-          <button className="btn btn-info m-3" onClick={handleCreate}>Create URL</button>
-          <LogButton/>
-        </div> 
-    <h5 className="text-decoration-underline mb-3"> All URLs </h5> 
+      <h4 className=" text-decoration-underline mb-3"> All URLs </h4> 
       <div className='d-flex flex-column justify-content-center align-items-center'>
-        <h6>List of URLs created by user : {urlList.length}</h6>
+        <h5>Total URLs created by user : {urlList.length}</h5>
       { urlList.length &&
         <table className="table table-success table-striped table-responsive-md mt-3 w-75 "> 
         <thead>
@@ -106,8 +98,7 @@ function AllURL() {
         )}
         </tbody>
         </table>
-      }
-      
+      }     
       </div> 
     </>
   )
