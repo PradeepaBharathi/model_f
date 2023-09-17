@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // const BASE_URL = "http://localhost:9000";
-const BASE_URL = "https://urlshortener-backend-7x1o.onrender.com";
+const BASE_URL = "https://url-b-a8iq.onrender.com";
 
 export const addUser = async (payload) => {
     const response = await axios.post(`${BASE_URL}/user/signup`, payload);
